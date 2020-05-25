@@ -1,0 +1,6 @@
+-- [WHERE] and [AND] keyword
+SELECT  p.first_name AS Firstname
+FROM person_details p
+WHERE p.first_name="Manisha"
+AND
+p.id=01;
