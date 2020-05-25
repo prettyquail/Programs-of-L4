@@ -1,0 +1,7 @@
+-- [IS NOT] OPERATOR
+SELECT e.email_person_id,e.email
+FROM
+email_address e
+WHERE
+e.email_person_id IS NOT NULL;
+
