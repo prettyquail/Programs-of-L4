@@ -1,0 +1,5 @@
+-- BETWEEN CLAUSE
+SELECT  p.first_name AS Firstname
+FROM person_details p
+WHERE p.id
+BETWEEN 1 AND 3;
