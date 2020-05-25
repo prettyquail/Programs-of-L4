@@ -1,0 +1,6 @@
+-- HAVING CLAUSE{It allows to show specific data}
+SELECT COUNT( p.first_name),
+p.first_name
+FROM person_details p
+GROUP BY p.first_name
+HAVING p.first_name="Manisha";
