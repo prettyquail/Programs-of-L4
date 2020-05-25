@@ -1,0 +1,5 @@
+-- LIKE OPERATOR
+SELECT  p.last_name AS Lasttname
+FROM person_details p
+WHERE p.last_name
+LIKE "%u";
