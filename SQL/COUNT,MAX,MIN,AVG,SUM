@@ -1,0 +1,19 @@
+-- COUNT,MAX,MIN,AVG,SUM
+SELECT COUNT(p.first_name)
+FROM person_details p;
+
+-- MAX
+SELECT MAX(p.id)
+FROM person_details p;
+
+-- MIN
+SELECT MIN(p.id)
+FROM person_details p;
+
+-- AVG
+SELECT AVG(p.id)
+FROM person_details p;
+
+-- SUM
+SELECT SUM(p.id)
+FROM person_details p;
