@@ -1,0 +1,4 @@
+-- ORDER BY CLAUSE
+SELECT p.first_name,p.last_name
+FROM person_details p
+ORDER BY p.last_name;
