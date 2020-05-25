@@ -1,0 +1,3 @@
+-- SET FUNCTIONS WITH QUALIFIERS
+SELECT COUNT( DISTINCT p.first_name)
+FROM person_details p;
