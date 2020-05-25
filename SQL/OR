@@ -1,0 +1,6 @@
+-- [OR] Keyword
+SELECT  p.first_name AS Firstname
+FROM person_details
+WHERE p.first_name="Manisha"
+OR
+p.last_name="Sahu"
