@@ -1,0 +1,5 @@
+-- IN OPERATOR
+SELECT  p.last_name AS Lasttname
+FROM person_details p
+WHERE p.first_name
+IN ("Khushi","Anushka");
