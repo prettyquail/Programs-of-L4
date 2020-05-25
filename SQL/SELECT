@@ -1,2 +1,6 @@
 SELECT "Hello,World";
 SELECT "Hello" as FirstName ,"World" as SecondName;
+
+USE contact;
+SELECT p.first_name as Firstname
+From person_details p;
