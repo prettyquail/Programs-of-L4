@@ -1,0 +1,5 @@
+-- GROUP BY CLAUSE{It shows tha data alongwith the count}
+SELECT COUNT( p.first_name),
+p.first_name
+FROM person_details p
+GROUP BY p.first_name;
