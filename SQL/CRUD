@@ -1,0 +1,66 @@
+-- CRUD [CREATE,READ,UPDATE,DELETE]
+ CREATE TABLE person
+ (person_id INTEGER,
+ person_first_name VARCHAR(256),
+ person_last_name VARCHAR(256)
+ );
+ 
+ 
+ CREATE TABLE email_address
+ (email_address_id INTEGER NOT NULL PRIMARY KEY,
+ email_address VARCHAR(256),
+ email_address_person_id INTEGER
+  );
+
+-- INSERT
+INSERT INTO 
+person_details
+(id,
+first_name,
+last_name,
+Email
+)
+VALUES
+(6,
+"Ashish",
+"Bhinde",
+"ashishbhindegmail.com"
+);
+
+
+-- BULK INSERT
+INSERT INTO 
+person_details
+(id,
+first_name,
+last_name,
+Email
+)
+VALUES
+(7,
+"Ashish",
+"Bhinde",
+"ashishbhindegmail.com"
+),
+(8,
+"Ashish",
+"Bhinde",
+"ashishbhindegmail.com"
+),
+(9,
+"Ashish",
+"Bhinde",
+"ashishbhindegmail.com"
+);
+
+
+-- UPDATE COMMAND
+UPDATE
+person_details p
+SET
+p.first_name="Bob"
+WHERE p.id=7;
+
+-- DELETE COMMAND
+DELETE FROM person_details
+WHERE id=9;
