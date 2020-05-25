@@ -1,0 +1,5 @@
+-- SECOND MAXIMUM ELEMENT
+SELECT MAX(id)
+FROM person_details
+WHERE id < (SELECT MAX(id)
+            FROM person_details);
