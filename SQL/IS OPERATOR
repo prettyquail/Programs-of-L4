@@ -1,0 +1,6 @@
+-- IS OPERATOR
+SELECT p.last_name
+FROM
+person_details p
+WHERE p.first_name
+IS NULL;
