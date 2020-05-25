@@ -1,0 +1,3 @@
+-- DISTINCT
+SELECT DISTINCT p.first_name as Firstname
+From person_details p;
