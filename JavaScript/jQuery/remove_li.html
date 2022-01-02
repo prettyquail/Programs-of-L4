@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<ol>
+		<li></li>
+		<li></li>
+	</ol>
+
+	<button id="add_li">Add List</button>
+	<button id="remove_all">Remove whole List</button>
+	<button id="remove_li">Remove List</button>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$("#add_li").click(function() {
+		$("ol").append("<li></li>");
+	});
+
+	$("#remove_all").click(function() {
+		$("li").remove();
+	});
+
+	$("#remove_li").click(function() {
+		$("li").eq(1).remove();
+	});
+	
+</script>
+</html>

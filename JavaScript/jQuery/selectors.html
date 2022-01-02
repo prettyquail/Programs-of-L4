@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">	
+	</script>
+
+	<script>
+		// jb bhi document ready hojayega tb yeh run hoga
+		$(document).ready(function(){
+			$("p").css("border","3px solid blue");
+		})
+
+
+		//agar class ko select krna he toh
+		$(document).ready(function(){
+			$(".a").css("border","3px solid orange");
+		})
+
+		//to select element by id
+		$(document).ready(function(){
+			$("#list1").css("border","3px solid green");
+		})
+
+		//to select a paragraph having id "b"
+		$(document).ready(function(){
+			$("p.b").css("border","3px solid red");
+		})
+	</script>
+
+
+	<style>
+		.a{
+			color: navy;
+		}
+		.b{
+			color: maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">Item 1</li>
+		<li class="b">Item 2</li>
+		<li class="c">Item 3</li>
+		<li class="d">Item 4</li>
+	</ul>
+
+	<p class="a">Para 1</p>
+	<p>Para 2</p>
+	<p class="b">Para 3</p>
+	<p>Para 4</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="container">
+		<p id="p-first">The first paragraph</p>
+		<p id="p-second">The second paragraph</p>
+		<p id="p-third">The third paragraph</p>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#container').append("Added new paragraph using jQuery");
+	});
+
+	$(document).ready(function() {
+		$('#container').prepend("<p>To add HTML tag using jQuery</p>");
+	});
+
+	$(document).ready(function() {
+		$('#container').before("<p>To add paragraph before the conatiner using jQuery</p>");
+	});
+
+	$(document).ready(function() {
+		$('#container').before("To add paragraph after the conatiner using jQuery");
+	});
+
+	$(document).ready(function() {
+		$('#container').append("<p>To add paragraph inside another paragraph</p>","<p>Second paragraph</p>");
+	});
+
+	var newelement=document.createElement("p");
+	newelement.innerHTML = "A new new paragraph";
+
+	$('#container').append(newelement);
+</script>
+</html>

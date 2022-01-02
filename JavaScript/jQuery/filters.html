@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">	
+	</script>
+
+	<script>
+		// p:first mtlb filter krna
+		$(document).ready(function(){
+			$("p:first").css("border","3px solid blue");
+		})
+
+		$(document).ready(function(){
+			$("p:last").css("border","3px solid orange");
+		})
+
+		//0 se start hota he
+		$(document).ready(function(){
+			$("p:even").css("border","3px solid lightgreen");
+		})
+
+		
+		$(document).ready(function(){
+			$("p:odd").css("border","3px solid blue");
+		})
+
+
+		//jiske class "a" he , uska first element
+		$(document).ready(function(){
+			$(".a:first").css("border","3px solid red");
+		})
+
+		// jo para greater than 1 se use select krna he toh
+		$(document).ready(function(){
+			$("p:gt(1)").css("border","3px solid red");
+		})
+
+	</script>
+
+
+	<style>
+		.a{
+			color: navy;
+		}
+		.b{
+			color: maroon;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">Item 1</li>
+		<li class="a">Item 2</li>
+		<li class="b">Item 3</li>
+		<li class="b">Item 4</li>
+	</ul>
+
+	<p class="a">Para 1</p>
+	<p id="para2">Para 2</p>
+	<p class="b">Para 3</p>
+	<p>Para 4</p>
+</body>
+</html>

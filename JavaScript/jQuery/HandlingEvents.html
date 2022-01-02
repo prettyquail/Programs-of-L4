@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="p1">Paragraph 1</p>
+	<p id="p2">Paragraph 2</p>
+	<p id="p3">Paragraph 3</p>
+	<p id="p4">Paragraph 4</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		// body...
+
+		$("#p1").hover(function(){
+			$(this).hide();
+		});
+
+		$("#p2").click(function(){
+			$(this).hide();
+		});
+
+		$("#p3").dblclick(function(){
+			$(this).hide();
+		});
+
+		$("#p4").mouseout(function(){
+			$(this).hide();
+		});
+	})
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="show">I am learning JS</h1>
+	<p id="fname">Manisha</p>
+	<p id="lname">Sahu</p>
+
+	<div>
+		<p id="first">
+			<span>First span inside div</span>
+			<span>Second span inside div</span>
+		</p>
+	</div>
+	<script>
+		var result =document.body.getElementsByTagName("*");
+		var result2 =document.body.getElementsByTagName("p");
+		document.write(result+"<br>");
+		console.log(result);
+		document.write(result2+"<br>");
+		console.log(result2);
+
+		//Access span tag with the help of getElementById and getElementsByTagName
+		var getSpan= document.getElementById("first");
+		var result3= getSpan.getElementsByTagName("span");
+		document.write(result3+"<br>");
+		console.log(result3+"\n");
+
+
+		//to get a length of an element
+		var len1= document.getElementsByTagName("p").length;
+		document.write(len1+"<br>");
+		console.log(len1+"\n");
+
+
+		//loop
+		var len=document.getElementsByTagName("p").length;
+		for(let i=0; i<len; i++){
+			var result4= document.getElementsByTagName("p")[i];
+			document.write(result4 + "<br>");
+			console.log(result4);
+		}
+	</script>
+
+</body>
+</html>
